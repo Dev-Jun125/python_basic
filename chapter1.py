@@ -8,19 +8,11 @@ print("""hello world""")
 #separator
 print('P', "Y", 'T', "H", 'O', 'N', sep = ',')
 
-def solution(v):    
-    answer = []
-    v1 = []
-    v2 = []
-    for i in v:
-        if i[0] not in v1:
-            v1.append(i[0])
-        else:
-            v1.remove(i[0])
-        if i[1] not in v2:
-            v2.append(i[1])
-        else:
-            v2.remove(i[1])
-    answer = v1 + v2
+print('%s %s' %('one','two'))
+print('{} {}'.format('one','two'))
+# 정렬
+print('{:^100}'.format('good'))
+# 글주 수 까지 출력
+print('%.5s' % ('abcdefghijkl'))
 
-    return answer
+print('%06.2f'%(3.12512312512321))
