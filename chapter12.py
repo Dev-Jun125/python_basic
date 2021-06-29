@@ -96,3 +96,21 @@ def nestedFunc(num):
     inFunc(num + 100)
 
 nestedFunc(100)
+
+#람다식
+#메모리 절약, 가독성 향상, 코드 간결
+#함수 -> 객체 생성 -> 리소스(메모리) 할당
+#람다 -> 즉시 실행 함수(Heap 초기화) -> 메모리 초기화
+#남발 시 가독성 역으로 감소
+print('-------------')
+def mul_func1(x, y):
+    return x * y
+print(mul_func1(20,30))
+
+mul_func2 = lambda x,y:x*y
+print(mul_func2(30, 40))
+
+def func_final(x,y,func):
+    print(x * y * func)
+
+func_final(10,20,mul_func2(10,20))
