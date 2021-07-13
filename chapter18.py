@@ -87,3 +87,6 @@ print(type([]))
 print(list(zip([10,20,30], [40,50,60])))
 print(type(list(zip([10,20,30], [40,50,60]))[0]))
 print(list(zip([10,20,30], [40,50,60]))[0])
+
+# enumerate, map, filter는 자주 사용되는 내장함수 알아두기
+# zip도 자주 이용될수도
